@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso HTML5 Essencial</title>
+
+    <script>
+        function mostrarResultado() {
+            document.getElementById("resultado").innerHTML = document.getElementById("avaliacao").value; // document to value = pega valor selecionado do input e poe no resultado 
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form action="index.html" method="post">
+        <input type="range" id="avaliacao" min="1" max="10" value="1" onchange="mostrarResultado()">
+        <span id="resultado"></span>
+    </form>
+
+</body>
+
+</html>

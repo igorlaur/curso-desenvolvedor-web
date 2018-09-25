@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        var sorteio;
+        var mega = new Array();
+
+        var i = 0;
+        while (i <= 6) {
+            sorteio = Math.ceil(Math.random() * 60); // Ceil faz virar numero inteiro
+            if (mega.indexOf(sorteio) < 0) { // Fiz este if para não repetir números iguais
+                mega.push(sorteio);
+                i++;
+            }
+        }
+        console.log(mega)
+    </script>
+</head>
+
+</html>
